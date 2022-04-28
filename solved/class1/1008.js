@@ -1,0 +1,4 @@
+/* https://www.acmicpc.net/problem/1008 */
+const input = require('fs').readFileSync('/dev/stdin').toString().split(' ').map(Number);
+
+console.log(input[0] / input[1]);
