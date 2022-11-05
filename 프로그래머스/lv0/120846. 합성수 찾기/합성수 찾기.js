@@ -1,0 +1,14 @@
+function solution(n) {
+    let answer = 0;
+
+    for (let i = 1; i <= n; i++) {
+        for (let j = 2; j <= Math.sqrt(i); j++) {
+            if (i % j === 0) {
+                answer++;
+                break;
+            }
+        }
+    }
+
+    return answer;
+}
